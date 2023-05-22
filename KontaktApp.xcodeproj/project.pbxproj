@@ -14,6 +14,11 @@
 		4B7BFE562A1B76A6009CBF6F /* KontaktAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BFE552A1B76A6009CBF6F /* KontaktAppTests.swift */; };
 		4B7BFE602A1B76A6009CBF6F /* KontaktAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BFE5F2A1B76A6009CBF6F /* KontaktAppUITests.swift */; };
 		4B7BFE622A1B76A6009CBF6F /* KontaktAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BFE612A1B76A6009CBF6F /* KontaktAppUITestsLaunchTests.swift */; };
+		4B7BFE712A1B7783009CBF6F /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BFE702A1B7783009CBF6F /* Contact.swift */; };
+		4B7BFE732A1B7811009CBF6F /* KontaktListeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BFE722A1B7811009CBF6F /* KontaktListeView.swift */; };
+		4B7BFE752A1B7825009CBF6F /* SucheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BFE742A1B7825009CBF6F /* SucheView.swift */; };
+		4B7BFE772A1B8D40009CBF6F /* CookieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BFE762A1B8D40009CBF6F /* CookieView.swift */; };
+		4B7BFE792A1B8F49009CBF6F /* AmpelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BFE782A1B8F49009CBF6F /* AmpelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		4B7BFE5B2A1B76A6009CBF6F /* KontaktAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KontaktAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B7BFE5F2A1B76A6009CBF6F /* KontaktAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontaktAppUITests.swift; sourceTree = "<group>"; };
 		4B7BFE612A1B76A6009CBF6F /* KontaktAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontaktAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4B7BFE702A1B7783009CBF6F /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		4B7BFE722A1B7811009CBF6F /* KontaktListeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontaktListeView.swift; sourceTree = "<group>"; };
+		4B7BFE742A1B7825009CBF6F /* SucheView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SucheView.swift; sourceTree = "<group>"; };
+		4B7BFE762A1B8D40009CBF6F /* CookieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieView.swift; sourceTree = "<group>"; };
+		4B7BFE782A1B8F49009CBF6F /* AmpelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,8 @@
 		4B7BFE432A1B76A5009CBF6F /* KontaktApp */ = {
 			isa = PBXGroup;
 			children = (
+				4B7BFE6F2A1B776D009CBF6F /* Model */,
+				4B7BFE6E2A1B7760009CBF6F /* Views */,
 				4B7BFE442A1B76A5009CBF6F /* KontaktAppApp.swift */,
 				4B7BFE462A1B76A5009CBF6F /* ContentView.swift */,
 				4B7BFE482A1B76A5009CBF6F /* Assets.xcassets */,
@@ -125,6 +137,25 @@
 				4B7BFE612A1B76A6009CBF6F /* KontaktAppUITestsLaunchTests.swift */,
 			);
 			path = KontaktAppUITests;
+			sourceTree = "<group>";
+		};
+		4B7BFE6E2A1B7760009CBF6F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4B7BFE722A1B7811009CBF6F /* KontaktListeView.swift */,
+				4B7BFE742A1B7825009CBF6F /* SucheView.swift */,
+				4B7BFE762A1B8D40009CBF6F /* CookieView.swift */,
+				4B7BFE782A1B8F49009CBF6F /* AmpelView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4B7BFE6F2A1B776D009CBF6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B7BFE702A1B7783009CBF6F /* Contact.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B7BFE772A1B8D40009CBF6F /* CookieView.swift in Sources */,
+				4B7BFE712A1B7783009CBF6F /* Contact.swift in Sources */,
+				4B7BFE792A1B8F49009CBF6F /* AmpelView.swift in Sources */,
+				4B7BFE752A1B7825009CBF6F /* SucheView.swift in Sources */,
+				4B7BFE732A1B7811009CBF6F /* KontaktListeView.swift in Sources */,
 				4B7BFE472A1B76A5009CBF6F /* ContentView.swift in Sources */,
 				4B7BFE452A1B76A5009CBF6F /* KontaktAppApp.swift in Sources */,
 			);
