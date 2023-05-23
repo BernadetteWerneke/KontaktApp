@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+   
+
     @State var tabSelection = 0
     @State var contactBadge: Int = 0
     
     var body: some View {
         TabView(selection: $tabSelection){
-            KontaktListeView(tabSelection: $tabSelection, countBadge: $contactBadge)
+    KontaktListeView(tabSelection: $tabSelection, countBadge: $contactBadge)
                 .tabItem{
                     Label("Kontakt", systemImage: "person.crop.circle")
                 }
@@ -39,6 +42,8 @@ struct ContentView: View {
                 .tag(3)
         }
     }
+    
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

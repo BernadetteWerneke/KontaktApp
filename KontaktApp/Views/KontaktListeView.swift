@@ -4,12 +4,12 @@
 //
 //  Created by Bernadette Werneke on 22.05.23.
 //
-
+import Foundation
 import SwiftUI
 
 struct KontaktListeView: View {
     
-    @State var conctats: [Contact] =
+    @State var contacts: [Contact] =
         [Contact(id: 0, name: "Alice", phone: "1234567"),
          Contact(id: 1, name: "Bob", phone: "0173428374"),
          Contact(id: 2, name: "Charlie", phone: "012345"),
@@ -22,10 +22,14 @@ struct KontaktListeView: View {
          Contact(id: 9, name: "Lena", phone: "01234726"),
          Contact(id: 10, name: "Chris", phone: "0173428374")]
     
+    @State var searchingFor = ""
+    
     @Binding var tabSelection: Int
     @Binding var countBadge: Int
     
+    
     var body: some View {
+    
         VStack{
         Text("Kontakte")
                 .font(.largeTitle)
@@ -35,7 +39,7 @@ struct KontaktListeView: View {
             
             List {
                 
-                ForEach(conctats.sorted {$0.name.lowercased() < $1.name.lowercased()}) { conctat in
+                ForEach(contacts.sorted {$0.name.lowercased() < $1.name.lowercased()}) { conctat in
                    
                     HStack{
                         Text(conctat.name)
@@ -46,13 +50,13 @@ struct KontaktListeView: View {
                 }
                 .onDelete {
                     indexSet in
-                    conctats.remove(atOffsets: indexSet)
+                    contacts.remove(atOffsets: indexSet)
                 }
-                
             }
-            
         }
     }
-}
+    
 
+        }
+        
 

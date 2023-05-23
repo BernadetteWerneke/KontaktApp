@@ -8,9 +8,18 @@
 import SwiftUI
 
 struct SucheView: View {
+
     @State var sucheEingabe: String = ""
+    
     var body: some View {
-        TextField("Suche", text: $sucheEingabe)
+        VStack{
+            TextField("Suche", text: $sucheEingabe)
+                .padding()
+                .background(.gray)
+                .opacity(0.2)
+                .cornerRadius(25)
+            
+        }
     }
 }
 
